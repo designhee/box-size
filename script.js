@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const height = getNumberCell(row, col.height);
 
             if (length !== null && width !== null && height !== null) {
-              sizeText = `${length}X${width}X${height}`;
+              sizeText = `${length}x${width}x${height}`;
               widthBase = length;
             }
           }
