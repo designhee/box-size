@@ -1,0 +1,280 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+
+:root {
+  --blue: #2453a6;
+  --blue-text: #214fa5;
+  --line: #d9dee8;
+  --line-dark: #bfc8d8;
+  --text: #2f3440;
+  --muted: #8f8f8f;
+  --bg: #ffffff;
+  --sub-bg: #f7f9fc;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #f3f5f8;
+  font-family: "Pretendard", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+  color: var(--text);
+}
+
+body {
+  min-width: 860px;
+}
+
+.page-wrap {
+  width: 860px;
+  margin: 0 auto;
+  padding: 20px 0 32px;
+}
+
+.top-controls {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.upload-box {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 0 0 14px;
+  padding: 14px 16px;
+  background: #f7f9fc;
+  border: 1px solid #e3e8f1;
+  border-radius: 14px;
+}
+
+.upload-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 140px;
+  height: 44px;
+  padding: 0 18px;
+  border-radius: 999px;
+  background: var(--blue);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  border: 0;
+  transition: opacity 0.2s ease;
+}
+
+.upload-button:hover {
+  opacity: 0.92;
+}
+
+#csvFileInput {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.file-name {
+  font-size: 14px;
+  color: #6d6d6d;
+  font-weight: 600;
+}
+
+.action-box {
+  text-align: right;
+  margin-bottom: 4px;
+  margin-top: 50px;
+}
+
+#saveImageButton {
+  min-width: 160px;
+}
+
+.capture-wrap {
+  width: 860px;
+  background: var(--white);
+  padding-bottom: 32px;
+}
+
+.catalog-header {
+  padding: 0 24px;
+}
+
+.title-badge {
+  display: inline-flex;
+  align-items: center;
+  /* min-width: 445px; */
+  height: 72px;
+  padding: 10px 24px;
+  margin-bottom: 20px;
+  background: var(--blue);
+  color: #fff;
+  font-size: 34px;
+  font-weight: 800;
+  border-radius: 0 0 14px 14px;
+  letter-spacing: -0.05em;
+}
+
+.catalog-help {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 12px 0 18px;
+  font-size: 17px;
+  line-height: 1.4;
+  color: #9a9a9a;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.catalog-help__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid #b6b6b6;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 800;
+  color: #a0a0a0;
+  line-height: 1;
+  flex: 0 0 auto;
+}
+
+.catalog-help__text {
+  color: #8f8f8f;
+}
+
+.catalog-help__phone {
+  color: #8f8f8f;
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.catalog-help__divider {
+  color: #a0a0a0;
+  margin: 0 2px;
+}
+
+.table-scroll {
+  width: 100%;
+  overflow: visible;
+  padding: 0 24px;
+}
+
+.table-section {
+  margin-bottom: 40px;
+}
+
+.table-section-title {
+  margin: 0 0 12px;
+  padding-top: 10px;
+  font-size: 40px;
+  line-height: 1.15;
+  font-weight: 800;
+  color: var(--blue-text);
+  letter-spacing: -0.04em;
+}
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  background: var(--white);
+  border-top: 2px solid var(--line-dark);
+  border-bottom: 1px solid var(--line-dark);
+}
+
+.product-table colgroup col:nth-child(1) {
+  width: 24%;
+}
+
+.product-table colgroup col:nth-child(2) {
+  width: 24%;
+}
+
+.product-table colgroup col:nth-child(3) {
+  width: 14%;
+}
+
+.product-table colgroup col:nth-child(4) {
+  width: 14%;
+}
+
+.product-table colgroup col:nth-child(5) {
+  width: 24%;
+}
+
+.product-table thead th {
+  padding: 14px 10px;
+  font-size: 17px;
+  color: #233d9a;
+  font-weight: 800;
+  text-align: center;
+  border-bottom: 2px solid var(--line-dark);
+  background: #f2f6fc;
+  letter-spacing: -0.03em;
+  white-space: nowrap;
+}
+
+.product-table tbody td {
+  min-height: 52px;
+  padding: 13px 12px;
+  font-size: 16px;
+  line-height: 1.45;
+  font-weight: 500;
+  border-bottom: 1px solid var(--line);
+  vertical-align: middle;
+  letter-spacing: -0.02em;
+  word-break: keep-all;
+  text-align: center;
+}
+
+.product-table tbody tr:nth-child(even) {
+  background-color: #f8fbff;
+}
+
+.product-table tbody tr:hover {
+  background-color: #eef5ff;
+  transition: background-color 0.2s ease;
+}
+
+.loading-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 240px;
+  border: 1px dashed #ccd5e4;
+  border-radius: 16px;
+  background: #fafcff;
+}
+
+.loading-text {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #7c8596;
+}
+
+.empty-message {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #7c8596;
+  background: #fafcff;
+  border: 1px dashed #ccd5e4;
+  border-radius: 16px;
+}
