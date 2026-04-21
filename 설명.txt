@@ -1,0 +1,10 @@
+링크 : https://designhee.github.io/box-size/
+
+표 꾸미기 :
+
+1. 색상 바꾸는 핵심 👉 :root (5~13줄)
+2. 폰트 바꾸는 핵심 👉 html, body (17~23줄)
+3. 디자인 느낌 바꾸는 핵심 3개
+.title-badge → 상단 파란 박스
+.catalog-help → 고객센터 줄
+.product-table thead th → 표 헤더
