@@ -229,7 +229,7 @@ function renderGroupedTable(data, container) {
     if (key === "200") label = "가로 사이즈 200~300mm";
     if (key === "300") label = "가로 사이즈 300~400mm";
     if (key === "400") label = "가로 사이즈 400~500mm";
-    if (key === "500") label = "가로 사이즈 500~mm";
+    if (key === "500") label = "가로 사이즈 500mm~";
 
     title.textContent = label;
 
