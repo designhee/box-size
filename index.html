@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>일반 포장 박스 규격표</title>
+
+  <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page-wrap">
+
+    <!-- 업로드/저장 영역: 이미지 저장에 포함되지 않음 -->
+    <section class="top-controls">
+      <div class="upload-box">
+        <label for="csvFileInput" class="upload-button">CSV 파일 선택</label>
+        <input type="file" id="csvFileInput" accept=".csv,text/csv" />
+        <span class="file-name" id="fileName">선택된 파일 없음</span>
+      </div>
+
+      <div class="action-box">
+        <button id="saveImageButton" class="upload-button" type="button">표 이미지 저장</button>
+      </div>
+    </section>
+
+    <!-- 실제 이미지 저장 영역 -->
+    <section class="capture-wrap">
+      <header class="catalog-header">
+        <div class="title-badge">일반 포장 박스 규격표</div>
+
+        <div class="catalog-help">
+          <span class="catalog-help__icon">i</span>
+          <span class="catalog-help__text">고객센터</span>
+          <span class="catalog-help__phone">070-5097-3247</span>
+          <span class="catalog-help__divider">/</span>
+          <span class="catalog-help__phone">051-831-0044</span>
+        </div>
+      </header>
+
+      <div class="table-scroll" id="tableContainer">
+        <div class="loading-wrap">
+          <p class="loading-text">CSV 파일을 업로드하면 표가 생성됩니다.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
